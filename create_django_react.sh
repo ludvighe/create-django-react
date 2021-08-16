@@ -72,6 +72,7 @@ echo -en "$title$YELLOW Setting up... $NC\r"
 fn "django-admin startproject $NAME"
 fn "cd $NAME"
 fn "django-admin startapp api"
+fn "python3 manage.py migrate"
 
 [ $run == 0 ] && echo -e "$title$RED Failed $NC        " && echo -e "$RED""Could not set up django$NC" && cleanup_exit
 [ $run == 1 ] && echo -e "$title$GREEN Done $NC        "
