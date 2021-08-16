@@ -38,7 +38,8 @@ fn () {
 }
 
 touch $LOG || cleanup_exit
-fn "rm .git"
+cd $SCRIPT_ROOT_PATH
+fn "rm -r .git"
 
 # Check dependencies
 echo -e "Checking dependencies..."
