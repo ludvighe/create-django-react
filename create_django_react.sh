@@ -44,7 +44,7 @@ fn "rm -rf .git"
 # Check dependencies
 echo -e "Checking dependencies..."
 
-dependencies=("python3" "pip3" "pipenv" "wget" "django-admin" "npm" "npx")
+dependencies=("python3" "pip3" "pipenv" "django-admin" "npm" "npx")
 dependencies_length=$(wc -w <<< ${dependencies[@]})
 
 run=1
